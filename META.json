@@ -55,6 +55,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kazeburo/HTML-FillInForm-ForceUTF8/issues"
+      },
+      "homepage" : "https://github.com/kazeburo/HTML-FillInForm-ForceUTF8",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/kazeburo/HTML-FillInForm-ForceUTF8.git",
+         "web" : "https://github.com/kazeburo/HTML-FillInForm-ForceUTF8"
+      }
+   },
    "version" : "0.02",
    "x_authority" : "cpan:KAZEBURO"
 }
