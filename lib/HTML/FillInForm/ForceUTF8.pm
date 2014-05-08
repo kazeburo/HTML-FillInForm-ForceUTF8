@@ -18,9 +18,10 @@ sub fill {
             $option{file} = $fh;
         }
     }
-    elsif ( exists $option{scalarref} ) {
-        Encode::_utf8_on( ${ $option{scalarref} } )
-          unless Encode::is_utf8( ${ $option{scalarref} } );
+    elsif ( exists $option{scalarref} && !Encode::is_utf8($option{scalarref}) ) {
+        my $val = ${$option{scalarref}};
+        Encode::_utf8_on( $val );
+        $option{scalarref} = \$val;
     }
     elsif ( exists $option{arrayref} ) {
         for ( @{ $option{arrayref} } ) {
