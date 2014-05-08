@@ -5,7 +5,7 @@ use warnings;
 use base qw(HTML::FillInForm);
 use Encode;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub fill {
     my ( $self, %option ) = @_;
